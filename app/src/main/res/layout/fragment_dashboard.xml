@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <TextView
+        android:id="@+id/tituloTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Qué deseas ordenar?"
+        android:textSize="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/entradaLabelTextView"
+        android:layout_width="53pt"
+        android:layout_height="wrap_content"
+        android:text="Entrada:"
+        app:layout_constraintTop_toBottomOf="@id/tituloTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/entradaEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ejemplo: ensalada"
+        app:layout_constraintTop_toBottomOf="@id/tituloTextView"
+        app:layout_constraintStart_toEndOf="@id/entradaLabelTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/platoFuerteLabelTextView"
+        android:layout_width="53pt"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Corte de carne:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/entradaEditText" />
+
+    <TextView
+        android:id="@+id/terminoCarne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Qué término te gusta comer tu carne?"
+        app:layout_constraintTop_toBottomOf="@id/platoFuerteLabelTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="16dp"/>
+
+    <!-- Radio Buttons -->
+    <RadioGroup
+        android:id="@+id/radio_group_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/terminoCarne">
+
+        <RadioButton
+            android:id="@+id/radio_button1"
+            android:layout_width="70pt"
+            android:layout_height="wrap_content"
+            android:text="Sellado" />
+
+        <RadioButton
+            android:id="@+id/radio_button2"
+            android:layout_width="70pt"
+            android:layout_height="wrap_content"
+            android:text="Rojo inglés" />
+
+        <RadioButton
+            android:id="@+id/radio_button3"
+            android:layout_width="70pt"
+            android:layout_height="wrap_content"
+            android:text="Termino medio" />
+
+        <RadioButton
+            android:id="@+id/radio_button4"
+            android:layout_width="70pt"
+            android:layout_height="wrap_content"
+            android:text="Tres cuartos" />
+
+        <RadioButton
+            android:id="@+id/radio_button5"
+            android:layout_width="70pt"
+            android:layout_height="wrap_content"
+            android:text="Bien cocido" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/platoFuerteEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ejemplo: Ribeye"
+        app:layout_constraintTop_toBottomOf="@id/entradaEditText"
+        app:layout_constraintStart_toEndOf="@id/platoFuerteLabelTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/postresLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Quiere que le preparemos postre?"
+        app:layout_constraintTop_toBottomOf="@id/radio_group_input"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="16dp"/>
+
+
+    <Switch
+        android:id="@+id/simpleSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="272dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/postresLabelTextView"
+        app:layout_constraintTop_toBottomOf="@id/radio_group_input"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/postreLabelTextView"
+        android:layout_width="53pt"
+        android:layout_height="wrap_content"
+        android:text="Postre:"
+        app:layout_constraintTop_toBottomOf="@id/simpleSwitch"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/postreEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ejemplo: flan de vainilla"
+        app:layout_constraintTop_toBottomOf="@id/simpleSwitch"
+        app:layout_constraintStart_toEndOf="@id/postreLabelTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
