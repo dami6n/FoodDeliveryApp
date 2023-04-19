@@ -16,6 +16,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        //Comentar Solo la linea 20 para ver la Activty Principal
+        setContentView(R.layout.activity_forma_de_pago);
+
+        //Para ver la Activity Para Forma De Pago se debe comentar/descomentar hasta la linea 36
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -30,6 +34,6 @@ class MainActivity : AppCompatActivity() {
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+        navView.setupWithNavController(navController) //Comentar/Descomentar hasta aqui
     }
 }

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormaDePago">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forma de Pago"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etNumeroTarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de tarjeta"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etFechaExpiracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etNumeroTarjeta"
+            android:layout_marginTop="16dp"
+            android:hint="Fecha de expiración" />
+
+        <RadioGroup
+            android:id="@+id/rgOpcionDebitoCredito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etFechaExpiracion"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/rbDebito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Débito" />
+
+            <RadioButton
+                android:id="@+id/rbCredito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crédito" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rgOpcionDebitoCredito"
+            android:layout_marginTop="16dp"
+            android:text="Pagar" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
