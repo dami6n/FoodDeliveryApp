@@ -15,6 +15,7 @@ a continuación:
 1. La aplicación cuenta con dos ventanas (Activity) la cuales son MainActivity y FormaDePago
 2. Para visualizar MainActivity basta con comentar la liena 20 del archivo MainActivity.kt
 3. Para visualizar FormaDePago se debe comentar de la linea 23 a 37 del archivo MainActivity.kt
+4. Se utilizó la versión 8.0.0 (oreo) de Android Para correrla 
 
 ## Muestra de las lineas que se deben comentar
 Dentro del archivo MainActivity.kt.
