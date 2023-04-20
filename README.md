@@ -20,12 +20,12 @@ a continuación:
 
 ## Muestra de las lineas que se deben comentar
 Dentro del archivo MainActivity.kt.
-Para ver activity_main el código a comentar es:
+Para ver fragment_dashboard.xml el código a comentar es:
 
- setContentView(R.layout.activity_forma_de_pago);
+  // setContentView(R.layout.activity_forma_de_pago);
 
 Para ver activity_forma_de_pago el código a comentar es:
-
+    /*
      binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -41,5 +41,6 @@ Para ver activity_forma_de_pago el código a comentar es:
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+        */
 
         
