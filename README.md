@@ -12,7 +12,7 @@ Food delivery app made in Kotlin.
 Para correr nuestra aplicacición se deben comentar ciertas lineas de código en la clase MainActivity.ktt descritas 
 a continuación:
 
-1. La aplicación cuenta con dos ventanas (Activity) la cuales son activity_main.xml y activity_forma_de_pago.xml
+1. La aplicación cuenta con dos ventanas (Activity) la cuales son fragment_dashboard.xml y activity_forma_de_pago.xml
 2. Para visualizar activity_main basta con comentar la liena 20 del archivo MainActivity.kt
 3. Para visualizar activity_forma_de_pago se debe comentar de la linea 23 a 37 del archivo MainActivity.kt
 4. Se utilizó la versión 8.0.0 (oreo) de Android Para correrla 
