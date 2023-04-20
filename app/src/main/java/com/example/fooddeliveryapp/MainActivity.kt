@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         //Comentar Solo la linea 20 para ver la Activty Principal
         setContentView(R.layout.activity_forma_de_pago);
 
-        //Para ver la Activity Para Forma De Pago se debe comentar/descomentar hasta la linea 36
+        //Para ver la Activity Para Forma De Pago se debe comentar/descomentar hasta la linea 37
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
