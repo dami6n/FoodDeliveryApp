@@ -16,6 +16,7 @@ a continuación:
 2. Para visualizar activity_main basta con comentar la liena 20 del archivo MainActivity.kt
 3. Para visualizar activity_forma_de_pago se debe comentar de la linea 23 a 37 del archivo MainActivity.kt
 4. Se utilizó la versión 8.0.0 (oreo) de Android Para correrla 
+5.Utilizamos la versión Android Studio Flamingo |2022.2.1 para realizar esta tarea
 
 ## Muestra de las lineas que se deben comentar
 Dentro del archivo MainActivity.kt.
