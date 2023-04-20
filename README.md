@@ -12,18 +12,18 @@ Food delivery app made in Kotlin.
 Para correr nuestra aplicacición se deben comentar ciertas lineas de código en la clase MainActivity.ktt descritas 
 a continuación:
 
-1. La aplicación cuenta con dos ventanas (Activity) la cuales son MainActivity y FormaDePago
-2. Para visualizar MainActivity basta con comentar la liena 20 del archivo MainActivity.kt
-3. Para visualizar FormaDePago se debe comentar de la linea 23 a 37 del archivo MainActivity.kt
+1. La aplicación cuenta con dos ventanas (Activity) la cuales son activity_main.xml y activity_forma_de_pago.xml
+2. Para visualizar activity_main basta con comentar la liena 20 del archivo MainActivity.kt
+3. Para visualizar activity_forma_de_pago se debe comentar de la linea 23 a 37 del archivo MainActivity.kt
 4. Se utilizó la versión 8.0.0 (oreo) de Android Para correrla 
 
 ## Muestra de las lineas que se deben comentar
 Dentro del archivo MainActivity.kt.
-Para ver MainActivity el código a comentar es:
+Para ver activity_main el código a comentar es:
 
  setContentView(R.layout.activity_forma_de_pago);
 
-Para ver FormaDePago el código a comentar es:
+Para ver activity_forma_de_pago el código a comentar es:
 
      binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
